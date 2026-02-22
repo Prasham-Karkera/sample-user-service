@@ -34,3 +34,8 @@ async def test_endpoint() -> dict[str, str]:
 async def test_endpoint() -> dict[str, str]:
     """Sample endpoint for manual testing and validation."""
     return {"message": "User service is reachable and responsive!"}
+
+@router.get("/test3", tags=["Testing"])
+async def test_endpoint() -> dict[str, str]:
+    """Sample endpoint for manual testing and validation."""
+    return {"message": "User service is reachable and responsive!"}
